@@ -1,0 +1,15 @@
+.sidebar.dark-mode {
+    width: 258px;
+    height: calc(100% - 20px);
+    background: linear-gradient(180deg, #444444 0%, #383838 100%);
+    color: #fff;
+    margin: 10px 0 10px 10px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.sidebar-bttn {
+    width: 100%;
+    border-radius: 0;
+    text-align: left;
+}
