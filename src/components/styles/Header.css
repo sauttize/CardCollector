@@ -1,6 +1,48 @@
 .header.dark-mode {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background: #303030;
     height: 48px;
     width: 100%;
     margin: 10px;
+    padding: 0 10px;
+}
+
+.wallet-info {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 1.4em;
+    font-weight: 300;
+}
+
+.wallet-info img {
+    width: 20px;
+    height: 20px;
+}
+
+.profile-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-align: right;
+}
+
+.profile-info .pp-container {
+    width: 35px;
+    height: 35px;
+    background: #fff;
+    border-radius: 12%;
+    overflow: hidden;
+}
+
+.profile-info .name {
+    font-size: 16px;
+}
+
+.profile-info .lvl {
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: -6px;
 }
