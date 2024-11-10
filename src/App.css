@@ -16,3 +16,14 @@ body.light-mode {
   width: 100%;
   display: flex;
 }
+
+.right-side {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.right-side .contents {
+  margin: 0 15px 15px 15px;
+}

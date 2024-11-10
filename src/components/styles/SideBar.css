@@ -1,11 +1,14 @@
 .sidebar.dark-mode {
     width: 258px;
+    min-width: 200px;
     height: calc(100% - 20px);
     background: linear-gradient(180deg, #444444 0%, #383838 100%);
     color: #fff;
     margin: 10px 0 10px 10px;
-    border-radius: 5px;
+    border-radius: 3px;
     overflow: hidden;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
 }
 
 .sidebar-bttn {

@@ -1,12 +1,16 @@
 import SideBarButton from './SideBarButton'
 import './styles/SideBar.css'
 
-function SideBar() {
+interface SideBarProps {
+  onButtonClick: (arg : string) => void;
+}
+
+function SideBar({ onButtonClick }: SideBarProps) {
   return (
     <div className="sidebar dark-mode">
-      <SideBarButton>Open</SideBarButton>
-      <SideBarButton>Collection</SideBarButton>
-      <SideBarButton>Store</SideBarButton>
+      <SideBarButton onClick={onButtonClick} text='Open'/>
+      <SideBarButton onClick={onButtonClick} text='Collection'/>
+      <SideBarButton onClick={onButtonClick} text='Store'/>
     </div>
   )
 }

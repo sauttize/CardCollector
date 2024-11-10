@@ -1,11 +1,18 @@
 interface SideBarButtonProps {
-    children?: React.ReactNode;
+    text : string;
+    onClick: (arg : string) => void;
 }
 
-function SideBarButton({ children }: SideBarButtonProps) {
+function SideBarButton({ text, onClick }: SideBarButtonProps) {
+  function handleClick() {
+    onClick(text);
+  }
+
   return (
-    <button className="sidebar-bttn">{children}</button>
-  )
+    <button className="sidebar-bttn" onClick={handleClick}>
+      {text}
+    </button>
+  );
 }
 
 export default SideBarButton

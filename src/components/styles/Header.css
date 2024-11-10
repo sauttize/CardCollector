@@ -4,9 +4,11 @@
     align-items: center;
     background: #303030;
     height: 48px;
-    width: 100%;
     margin: 10px;
     padding: 0 10px;
+    border-radius: 3px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
 }
 
 .wallet-info {
@@ -43,6 +45,16 @@
 
 .profile-info .lvl {
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 700;
     margin-top: -6px;
+}
+
+.lvl .lvl-num {
+    font-weight: 400;
+}
+
+.profile-info img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
